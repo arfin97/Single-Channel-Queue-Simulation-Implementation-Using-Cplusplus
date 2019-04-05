@@ -18,4 +18,12 @@ Assumptions
 
 ## I used file to take input and also for output. So put your input in in.txt file to see the output.
 
+## Output
+
+![alt text](https://raw.githubusercontent.com/arfin97/Single-Channel-Queue-Simulation-Implementation-Using-Cplusplus/master/images/output.png?token=AYCaTcfTMeMSOVEp1W2-xpyWH-mWXAkEks5csHsewA%3D%3D)
+
+<br>
+
+![alt text](https://raw.githubusercontent.com/arfin97/Single-Channel-Queue-Simulation-Implementation-Using-Cplusplus/master/images/table.png?token=AYCaTYt8o41Udw6NP_tGhSIiXLTFH46xks5csHs-wA%3D%3D)
+
 
