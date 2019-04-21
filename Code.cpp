@@ -20,23 +20,7 @@ using namespace std;
 #define EPSILON    (1.0E-8)
 #define siz 100000
 
-///////////////////////////PRIME/////////////////////////////
-bool siv[siz];
-vector<ll> prime;
-void sieve();
-void pri();
-/////////////////////////////////////////////////////
-//////////////////////////Factorial//////////////////
-long long int fact(long long int n);
 
-int product(int n){
-    int ans = 1;
-    while(n > 0){
-        ans *= (n%10);
-        n /= 10;
-    }
-    return ans;
-}
 
 int main(){
     #ifndef ONLINE_JUDGE
@@ -244,31 +228,3 @@ int main(){
     #endif
 }
 
-
-//////////////////////////prime/////////////////////////////
-void sieve() {
-    memset(siv, true, sizeof(siv));
-    int root = sqrt(siz);
-    for(int i = 2; i<=root; i++) {
-        for(int j = i*2; j <= siz; j+=i) {
-            siv[j] = false;
-        }
-    }
-}
-void pri() {
-    sieve();
-    siv[0] = false;
-    siv[1] = false;
-    for(int i = 0; i < siz; i++) if(siv[i] == true) prime.push_back(i);
-    /////////////Checking whether the function is working with this print///////
-    // cout << prime.size() << endl;
-}
-
-//////////////////////////Factorial//////////////////
-long long int fact(long long int n){
-    long long int ans = 1;
-    for(long long int i = 1; i <= n; i++){
-        ans *= i;
-    }
-    return ans;
-}
