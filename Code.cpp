@@ -72,7 +72,7 @@ int main(){
 
         // service_time[0] = rand() % 10; 
         // for(int i = 1; i < customer; i++){
-        //     service_time[i] = service_time[i-1]+ (rand()%10);
+        //     service_time[i] = (rand()%10);
         // }
 
 
